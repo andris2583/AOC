@@ -1024,7 +1024,7 @@ for i in range(len(data)):
     continue
   for j in range(len(data[i])):
     list_copy = data[i].copy()
-    list_copy.remove(data[i][j])
+    del list_copy[j]
     if(testLevel(list_copy)):
       safe_it = True
       break
